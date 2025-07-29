@@ -1,0 +1,5 @@
+wwwroot\app.css
+wwwroot\appsettings.json
+wwwroot\Assets\Images\GLOWI_LOGO_RGB.png
+C:\Repos\GlowMate2\GlowMate2.Shared\wwwroot\appsettings.json
+C:\Repos\GlowMate2\GlowMate2.Shared\wwwroot\app.css

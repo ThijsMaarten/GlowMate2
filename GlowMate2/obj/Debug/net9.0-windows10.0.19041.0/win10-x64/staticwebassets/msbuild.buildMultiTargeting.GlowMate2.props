@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GlowMate2.props" />
+</Project>

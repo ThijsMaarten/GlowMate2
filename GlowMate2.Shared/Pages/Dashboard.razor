@@ -1,0 +1,26 @@
+﻿@page "/dashboard"
+@rendermode InteractiveServer
+@using GlowMate2.Shared.Services
+@inject NavigationManager Navigation
+@inject IAuthService AuthService
+
+<h3>Dashboard</h3>
+
+
+<p>Welcome, @userId!</p>
+<button @onclick="Logout">Logout</button>
+
+@code {
+    private string? userId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        userId = await AuthService.GetCurrentUserIdAsync();
+    }
+
+    private async Task Logout()
+    {
+        await AuthService.LogoutAsync();
+        Navigation.NavigateTo("/login", true);
+    }
+}
